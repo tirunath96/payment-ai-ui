@@ -1,16 +1,62 @@
-# React + Vite
+# Payment AI Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based dashboard for investigating payment transactions using AI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search payments by transaction ID
+- Integrates with a Spring Boot REST API
+- Displays AI-generated payment investigation results
+- Loading and error handling
+- Responsive dashboard layout
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- CSS
+- REST API integration
 
-## Expanding the ESLint configuration
+## Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Dashboard → Spring Boot AI Client → MCP Server → PostgreSQL
+
+The AI client uses Ollama locally to analyse payment and gateway information retrieved from the database.
+
+## Prerequisites
+
+- Node.js and npm
+- Payment AI backend services running locally
+
+## Run Locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal, typically `http://localhost:5173` or another available port.
+
+## Backend API
+
+**Endpoint:** `POST http://localhost:8082/api/ai/investigate`
+
+Example request:
+
+```json
+{
+  "message": "Investigate TXN1001"
+}
+```
+
+## Purpose
+
+This project demonstrates React frontend development, REST API integration, and an AI-assisted payment investigation workflow.
