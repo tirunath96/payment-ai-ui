@@ -60,3 +60,8 @@ Example request:
 ## Purpose
 
 This project demonstrates React frontend development, REST API integration, and an AI-assisted payment investigation workflow.
+
+## Related Repositories
+
+- [MCP Server & Database](https://github.com/tirunath96/java-local-ai)
+- [AI Investigation Client](https://github.com/tirunath96/payment-ai-client)
