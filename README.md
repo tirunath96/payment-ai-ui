@@ -65,3 +65,11 @@ This project demonstrates React frontend development, REST API integration, and 
 
 - [MCP Server & Database](https://github.com/tirunath96/java-local-ai)
 - [AI Investigation Client](https://github.com/tirunath96/payment-ai-client)
+
+
+
+https://github.com/user-attachments/assets/7a450f7b-d8d2-4ae6-9e86-1ade25e96dbf
+
+
+
+
